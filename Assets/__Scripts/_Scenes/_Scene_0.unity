@@ -10756,12 +10756,12 @@ PrefabInstance:
     - target: {fileID: 4160791536547151846, guid: 77f67298036bef9469889216f708e989,
         type: 3}
       propertyPath: textNeeded
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4160791536547151846, guid: 77f67298036bef9469889216f708e989,
         type: 3}
       propertyPath: camChange.y
-      value: -28
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 4160791536547151847, guid: 77f67298036bef9469889216f708e989,
         type: 3}
@@ -31651,6 +31651,16 @@ PrefabInstance:
         type: 3}
       propertyPath: camChange.y
       value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160791536547151846, guid: 77f67298036bef9469889216f708e989,
+        type: 3}
+      propertyPath: textNeeded
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160791536547151846, guid: 77f67298036bef9469889216f708e989,
+        type: 3}
+      propertyPath: placeName
+      value: The Lake
       objectReference: {fileID: 0}
     - target: {fileID: 4160791536547151847, guid: 77f67298036bef9469889216f708e989,
         type: 3}
