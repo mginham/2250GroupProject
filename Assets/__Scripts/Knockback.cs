@@ -6,6 +6,7 @@ public class Knockback : MonoBehaviour
 {
     public float thrust;
     public float knockTime;
+    public float damage;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,17 +30,22 @@ public class Knockback : MonoBehaviour
                 hittable.AddForce(difference, ForceMode2D.Impulse);
 
                 // If object is enemy, activate stagger state
-                if (other.gameObject.CompareTag("enemy"))
+                if (other.gameObject.CompareTag("enemy") && other.isTrigger)
                 {
                     hittable.GetComponent<Enemy>().currentState = EnemyState.stagger;
-                    other.GetComponent<Enemy>().Knock(hittable, knockTime);
+                    other.GetComponent<Enemy>().Knock(hittable, knockTime, damage);
                 }
 
                 // If object is Player, activate stagger state
                 if (other.gameObject.CompareTag("Player"))
                 {
-                    hittable.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
-                    other.GetComponent<PlayerMovement>().Knock(knockTime);
+                    // Check to make sure Player is not already in stagger state
+                    if(other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
+                    {
+                        hittable.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+                        other.GetComponent<PlayerMovement>().Knock(knockTime, damage);
+                    }
+                    
                 }
             }
         }

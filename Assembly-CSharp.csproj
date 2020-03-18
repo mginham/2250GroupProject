@@ -55,13 +55,17 @@
   <ItemGroup>
      <Compile Include="Assets\__Scripts\CameraMovement.cs" />
      <Compile Include="Assets\__Scripts\Enemy.cs" />
+     <Compile Include="Assets\__Scripts\HeartManager.cs" />
      <Compile Include="Assets\__Scripts\Knockback.cs" />
      <Compile Include="Assets\__Scripts\Log.cs" />
      <Compile Include="Assets\__Scripts\PlayerHit.cs" />
      <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\__Scripts\Pot.cs" />
      <Compile Include="Assets\__Scripts\RoomMove.cs" />
+     <Compile Include="Assets\__Scripts\ScriptableObjects\FloatValue.cs" />
+     <Compile Include="Assets\__Scripts\ScriptableObjects\Signal.cs" />
      <Compile Include="Assets\__Scripts\Sign.cs" />
+     <Compile Include="Assets\__Scripts\SignalListener.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Megan/Documents/(2019-2020) UniYear2/Semester2/SE2250/GroupProject/2250GroupProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
