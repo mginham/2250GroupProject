@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
     public GameObject arrowProjectile;
+    public float teleportDistance;
 
 
     // Start is called before the first frame update
@@ -58,6 +59,32 @@ public class PlayerMovement : MonoBehaviour
         else if(currentState == PlayerState.walk || currentState == PlayerState.idle) // Activate walking animation
         {
             UpdateAnimationAndMove();
+        }
+
+        //Following lines move the player in whichever direction they are travelling in, by a changeable teleportDistance value
+        if (Mathf.Abs(transform.position.x + teleportDistance) <= 17)
+        {
+            if (Input.GetAxis("Horizontal") < 0 && Input.GetKeyDown(KeyCode.Z))
+            {
+                transform.position = new Vector2(transform.position.x - teleportDistance, transform.position.y);
+            }
+
+            if (Input.GetAxis("Horizontal") > 0 && Input.GetKeyDown(KeyCode.Z))
+            {
+                transform.position = new Vector2(transform.position.x + teleportDistance, transform.position.y);
+            }
+        }
+        if (Mathf.Abs(transform.position.y + teleportDistance) <= 12)
+        {
+            if (Input.GetAxis("Vertical") < 0 && Input.GetKeyDown(KeyCode.Z))
+            {
+                transform.position = new Vector2(transform.position.x, transform.position.y - teleportDistance);
+            }
+
+            if (Input.GetAxis("Vertical") > 0 && Input.GetKeyDown(KeyCode.Z))
+            {
+                transform.position = new Vector2(transform.position.x, transform.position.y + teleportDistance);
+            }
         }
     }
 
