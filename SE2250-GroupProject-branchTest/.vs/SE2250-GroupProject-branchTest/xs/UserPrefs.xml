@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{6566A992-9992-D86C-0732-47F0C58DF99F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/__Scripts/ClassSelector.cs">
+    <Files>
+      <File FileName="Assets/__Scripts/ClassSelector.cs" Line="57" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SE2250-GroupProject-branchTest" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="__Scripts" expanded="True">
+                <Node name="ClassSelector.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0aa634b7-685d-45dc-a1c2-ad2aadbffbdd" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
