@@ -10666,6 +10666,8 @@ MonoBehaviour:
   speed: 4
   currentHealth: {fileID: 11400000, guid: 4c7ac5d0e9329e6418560ab94ebb2dca, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: 4e8bad4334f227144a5182d9ce23d936, type: 2}
+  arrowProjectile: {fileID: 1794292067818671383, guid: 199487ead997282489e0361054f3f3bb,
+    type: 3}
 --- !u!95 &969037858
 Animator:
   serializedVersion: 3

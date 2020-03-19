@@ -24,10 +24,14 @@ public class Knockback : MonoBehaviour
             // Check if rigidbody is present
             if(hittable != null)
             {
+
                 // Apply force
-                Vector2 difference = hittable.transform.position - transform.position;
-                difference = difference.normalized * thrust; // Normalized ensures vector is of length one
-                hittable.AddForce(difference, ForceMode2D.Impulse);
+                if (other.gameObject.CompareTag("enemy") || (other.gameObject.CompareTag("Player") && !this.gameObject.CompareTag("projectile")))
+                {
+                    Vector2 difference = hittable.transform.position - transform.position;
+                    difference = difference.normalized * thrust; // Normalized ensures vector is of length one
+                    hittable.AddForce(difference, ForceMode2D.Impulse);
+                }
 
                 // If object is enemy, activate stagger state
                 if (other.gameObject.CompareTag("enemy") && other.isTrigger)
@@ -37,7 +41,7 @@ public class Knockback : MonoBehaviour
                 }
 
                 // If object is Player, activate stagger state
-                if (other.gameObject.CompareTag("Player"))
+                if (other.gameObject.CompareTag("Player") && !this.gameObject.CompareTag("projectile"))
                 {
                     // Check to make sure Player is not already in stagger state
                     if(other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)

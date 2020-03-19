@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator _animator;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
+    public GameObject arrowProjectile;
 
 
     // Start is called before the first frame update
@@ -50,6 +51,10 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(AttackCo());
         }
+        else if (Input.GetButtonDown("arrowAttack") && currentState != PlayerState.swordAttack && currentState != PlayerState.stagger)
+        {
+            StartCoroutine(AttackArrowCo());
+        }
         else if(currentState == PlayerState.walk || currentState == PlayerState.idle) // Activate walking animation
         {
             UpdateAnimationAndMove();
@@ -68,6 +73,34 @@ public class PlayerMovement : MonoBehaviour
         _animator.SetBool("swordAttacking", false);
         yield return new WaitForSeconds(.3f); // Wait 0.3 seconds (length of attack animation)
         currentState = PlayerState.walk;
+    }
+
+    private IEnumerator AttackArrowCo()
+    {
+        // Activate swordAttacking animation
+        //_animator.SetBool("swordAttacking", true);
+        currentState = PlayerState.swordAttack;
+        yield return null; // Wait 1 frame
+
+        MakeArrow();
+
+        // Disable swordAttacking animation after animation ends and return to walking animation
+        //_animator.SetBool("swordAttacking", false);
+        yield return new WaitForSeconds(.3f); // Wait 0.3 seconds (length of attack animation)
+        currentState = PlayerState.walk;
+    }
+
+    private void MakeArrow()
+    {
+        Vector2 moveTemp = new Vector2(_animator.GetFloat("moveX"), _animator.GetFloat("moveY"));
+        Arrow arrow = Instantiate(arrowProjectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
+        arrow.Setup(moveTemp, ChooseArrowDirection());
+    }
+
+    Vector3 ChooseArrowDirection()
+    {
+        float temp = Mathf.Atan2(_animator.GetFloat("moveY"), _animator.GetFloat("moveX")) * Mathf.Rad2Deg;
+        return new Vector3(0, 0, temp);
     }
 
     void UpdateAnimationAndMove()
