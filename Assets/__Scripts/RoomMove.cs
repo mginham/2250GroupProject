@@ -34,7 +34,7 @@ public class RoomMove : MonoBehaviour
             _cam.maxPosition += camChange;
 
             // Adjust player position according to change in location
-            other.transform.position += playerChange;
+            SingletonPlayer.Instance.lastPlayerPosition += playerChange;
 
             // Display place name when player enters
             if(textNeeded)
