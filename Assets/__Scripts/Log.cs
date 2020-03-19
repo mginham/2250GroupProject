@@ -49,7 +49,7 @@ public class Log : Enemy // inherit from Enemy class
                 anim.SetBool("wakeUp", true);
             }
         }
-        else if(Vector3.Distance(target.position, transform.position) > chaseRadius) // Don't want Log to fall asleep in chaseRadius
+        else if(Vector3.Distance(target.position, transform.position) > chaseRadius) // Don't fall asleep in chaseRadius
         {
             anim.SetBool("wakeUp", false);
         }
