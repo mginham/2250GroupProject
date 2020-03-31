@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
     public float moveSpeed;
     public EnemyState currentState;
 
+
+
     private void Awake()
     {
         health = maxHealth.initialValue;
@@ -34,6 +36,8 @@ public class Enemy : MonoBehaviour
         if(health <= 0)
         {
             this.gameObject.SetActive(false);
+
+            Stats.myInstance.GainXP(XPManager.CalculateXP(this as Enemy));//ZACH ADDED THIS
         }
     }
 

@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{937451A7-30A4-0A10-EAD4-087A02871ECE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/__Scripts/Switcher.cs">
+    <Files>
+      <File FileName="Assets/__Scripts/Switcher.cs" Line="10" Column="43" />
+      <File FileName="Assets/__Scripts/ClassSelector.cs" Line="64" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SE2250-GroupProject" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="__Scripts" expanded="True">
+                <Node name="Switcher.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f475a4bd-a6b5-4409-a04e-7e00018cbeea" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
