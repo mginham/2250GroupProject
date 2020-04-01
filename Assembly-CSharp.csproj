@@ -77,6 +77,7 @@
     <Compile Include="Assets\__Scripts\SignalListener.cs" />
     <Compile Include="Assets\__Scripts\SingletonGeneric.cs" />
     <Compile Include="Assets\__Scripts\SingletonPlayer.cs" />
+    <Compile Include="Assets\__Scripts\WizardBoss.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/laserbeam637/Desktop/GameProject/SE2250-GroupProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
