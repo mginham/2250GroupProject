@@ -43,11 +43,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 0c09f43bfb62804458284c739fee968e, type: 3}
-    totalSpriteSurfaceArea: 87450524
+    totalSpriteSurfaceArea: 91450524
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: f3325b40ee10b30a6f21ae442180fcaf
+      Hash: ec8348e16fcce6418cbded1ef171c6b6
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 6f6e82a02f35844629b1b223ba6aa45a, type: 3}
@@ -335,6 +335,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f441ed9bb39c31e49bd7d14e46cfe9c5, type: 3}
   - {fileID: 21300000, guid: 4219a5dcaa32f423ea907bcee1237945, type: 3}
   - {fileID: 21300000, guid: 64ca3a0d94cee4f2196110ba305b3f03, type: 3}
+  - {fileID: 21300000, guid: 64db47bd655514002a15871b9e60a73f, type: 3}
   - {fileID: 21300000, guid: 9276a63e6e35c4eeaa833e4211f3567b, type: 3}
   - {fileID: 21301654, guid: eb81d68ed7c2b574199a098a65808c09, type: 3}
   - {fileID: 21301674, guid: eb81d68ed7c2b574199a098a65808c09, type: 3}
@@ -1697,6 +1698,7 @@ SpriteAtlas:
   - NPC_test
   - pixil-frame-0 (16)
   - pixil-frame-0 (9)
+  - pixil-frame-0 (4)
   - pixil-frame-0 (14)
   - Overworld_827
   - Overworld_837

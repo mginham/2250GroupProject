@@ -16,7 +16,21 @@ public class ClassSelector : MonoBehaviour
     private float tmp;
     public GameObject[] classItems2;
     public GameObject frame;
-    private bool wait = true;
+    public bool wait = true;
+
+
+    private static ClassSelector instance;
+    public static ClassSelector myInstance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<ClassSelector>();
+            }
+            return instance;
+        }
+    }
 
     public void Dropdown_Index(int index)
     {

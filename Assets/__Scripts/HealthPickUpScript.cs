@@ -14,6 +14,7 @@ public class HealthPickUpScript : MonoBehaviour
             healthpickup.SetActive(false);
             Debug.Log("touching");
             HeartManager.myInstance.HealPlayer();
+            Destroy(healthpickup);
         }
     }
     // Start is called before the first frame update

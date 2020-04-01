@@ -2,9 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Stats : MonoBehaviour
 {
+    [SerializeField]
+    public AudioSource scream;//TODO change later
+
+
+    [SerializeField]
+    public AudioSource HAH;
+
 
     [SerializeField]
     private GameObject HealthPickup;
@@ -18,6 +26,10 @@ public class Stats : MonoBehaviour
     private Image content;
 
     public static float Cool;
+
+
+
+    Vector3 pos;
 
     private static Stats instance;
 
@@ -49,7 +61,7 @@ public class Stats : MonoBehaviour
 
     [SerializeField]
     private float lerpSpeed;
-
+    
 
     [SerializeField]
     private Text statValue;
@@ -124,8 +136,10 @@ public class Stats : MonoBehaviour
         {
             
             GainXP(3);
-           
+            //scream.Play();
         }
+        //Vector3 pos = player.transform.position;
+
     }
 
     public void Initialize(float currentValue, float maxValue)
@@ -166,13 +180,12 @@ public class Stats : MonoBehaviour
         MyLevel++;
         LvlUP.SetTrigger("LevelUp");
         LvlUP2.SetTrigger("LevelUp2");
-
-        Instantiate(HealthPickup);
-        Vector3 pos = player.transform.position;
-        pos.x = player.transform.position.x;
-        pos.y = player.transform.position.y - 2;
+        //HealthPickup.SetActive(false);
+        HeartManager.myInstance.HealPlayer();
+        /*Instantiate(HealthPickup);
         HealthPickup.transform.position = pos;
-        HealthPickup.SetActive(true);
+        HealthPickup.SetActive(true);*/
+
 
 
         levelText.text = MyLevel.ToString();
@@ -197,54 +210,5 @@ public class Stats : MonoBehaviour
         cooldown = Cool;
         return cooldown;
     }
-
-    
-
-
-    /*public IEnumerator FadeOut()
-    {
-        float startAlpha = text.color.a;
-
-        float rate = 1.0f / LifeSpan;
-        float progress = 0.0f;
-
-        while (progress < 1.0f)
-        {
-            Color tmp = text.color;
-            tmp.a = Mathf.Lerp(startAlpha, 0, progress);
-            text.color = tmp;
-            progress += rate * Time.deltaTime;
-            yield return null;
-        }
-        Destroy(gameObject);
-    }
-    private void MoveText()
-    {
-        transform.Translate(Vector2.up * speed * Time.deltaTime);
-    }*/
-    /*[SerializeField]
-    private GameObject XPtextPrefab;
-
-    public void CreateText(Vector2 position, string text, SCCTYPE type)
-    {
-        Text sct = Instantiate(XPtextPrefab, transform).GetComponent<Text>();
-        sct.transform.position = position;
-        string before = string.Empty;
-        string after = string.Empty;
-
-        switch (type)
-        {
-            case SCCTYPE.XP:
-                before = "+";
-                after = "EXP";
-                sct.color = Color.magenta;
-                break;
-
-        }
-
-        sct.text = before + text + after;
-
-    }*/
-
 
 }

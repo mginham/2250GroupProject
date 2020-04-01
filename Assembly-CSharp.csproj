@@ -69,6 +69,7 @@
     <Compile Include="Assets\__Scripts\ColourSelector.cs" />
     <Compile Include="Assets\__Scripts\CompleteLevel.cs" />
     <Compile Include="Assets\__Scripts\Enemy.cs" />
+    <Compile Include="Assets\__Scripts\EXPBottlePickUp.cs" />
     <Compile Include="Assets\__Scripts\ExperienceText.cs" />
     <Compile Include="Assets\__Scripts\ExperienceTextManager.cs" />
     <Compile Include="Assets\__Scripts\HealthPickUpScript.cs" />

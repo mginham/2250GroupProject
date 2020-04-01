@@ -2,12 +2,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/__Scripts/PlayerMovement.cs">
     <Files>
       <File FileName="Assets/__Scripts/Switcher.cs" Line="20" Column="6" />
-      <File FileName="Assets/__Scripts/ClassSelector.cs" Line="64" Column="26" />
-      <File FileName="Assets/__Scripts/Stats.cs" Line="19" Column="1" />
+      <File FileName="Assets/__Scripts/Stats.cs" Line="14" Column="28" />
+      <File FileName="Assets/__Scripts/ClassSelector.cs" Line="64" Column="39" />
+      <File FileName="Assets/__Scripts/Enemy.cs" Line="46" Column="44" />
+      <File FileName="Assets/__Scripts/Managers/XPManager.cs" Line="1" Column="1" />
       <File FileName="Assets/__Scripts/HealthPickUpScript.cs" Line="16" Column="50" />
-      <File FileName="Assets/__Scripts/PlayerHit.cs" Line="1" Column="1" />
-      <File FileName="Assets/__Scripts/Enemy.cs" Line="44" Column="19" />
-      <File FileName="Assets/__Scripts/ScriptableObjects/FloatValue.cs" Line="1" Column="1" />
+      <File FileName="Assets/__Scripts/EXPBottlePickUp.cs" Line="9" Column="1" />
+      <File FileName="Assets/__Scripts/CompleteLevel.cs" Line="24" Column="87" />
       <File FileName="Assets/__Scripts/PlayerMovement.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -16,6 +17,8 @@
           <Node name="SE2250-GroupProject" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="__Scripts" expanded="True">
+                <Node name="Managers" expanded="True" />
+                <Node name="ScriptableObjects" expanded="True" />
                 <Node name="PlayerMovement.cs" selected="True" />
               </Node>
             </Node>

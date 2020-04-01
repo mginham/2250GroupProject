@@ -13,6 +13,7 @@ public enum EnemyState
 
 public class Enemy : MonoBehaviour
 {
+  
     public float health;
     public FloatValue maxHealth;
     public string enemyName; // "name" is a reserved word
@@ -29,6 +30,10 @@ public class Enemy : MonoBehaviour
 
     private void TakeDamage(float damage)
     {
+        if (ClassSelector.myInstance.wait == false)
+        {
+            damage++;
+        }
         // Decriment health by damage
         health -= damage;
 
@@ -38,6 +43,7 @@ public class Enemy : MonoBehaviour
             this.gameObject.SetActive(false);
 
             Stats.myInstance.GainXP(XPManager.CalculateXP(this as Enemy));//ZACH ADDED THIS
+            Stats.myInstance.scream.Play();
         }
     }
 
