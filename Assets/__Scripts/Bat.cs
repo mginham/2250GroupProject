@@ -114,6 +114,7 @@ public class Bat : Enemy
 
     private void MakeArrow()
     {
+        //Vector3 spawnInfront = new Vector3 (transform.position.x + transform.position.x*0.2f, transform.position.y + transform.position.y*0.2f);
         Vector2 moveTemp = new Vector2(anim.GetFloat("moveX"), anim.GetFloat("moveY"));
         Arrow arrow = Instantiate(fireProjectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
         arrow.Setup(moveTemp, ChooseArrowDirection());
