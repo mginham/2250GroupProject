@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 0c09f43bfb62804458284c739fee968e, type: 3}
-    totalSpriteSurfaceArea: 986908
+    totalSpriteSurfaceArea: 990492
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -140,6 +140,20 @@ SpriteAtlas:
   - {fileID: 21300002, guid: 9f606a92d16f989459038384a80826a0, type: 3}
   - {fileID: 21300004, guid: 9f606a92d16f989459038384a80826a0, type: 3}
   - {fileID: 21300006, guid: 9f606a92d16f989459038384a80826a0, type: 3}
+  - {fileID: 21300020, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300018, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300022, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300016, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300006, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300004, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300002, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300000, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300014, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300012, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300010, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300008, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300024, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
+  - {fileID: 21300026, guid: 86293dd31ef70c244a464ade3838c80c, type: 3}
   - {fileID: 21300008, guid: e90e59262b796c44a98f825a10476261, type: 3}
   - {fileID: 21300024, guid: e90e59262b796c44a98f825a10476261, type: 3}
   - {fileID: 21300010, guid: e90e59262b796c44a98f825a10476261, type: 3}
@@ -1496,6 +1510,20 @@ SpriteAtlas:
   - modified gfx melee sprites_1
   - modified gfx melee sprites_2
   - modified gfx melee sprites_3
+  - fire_Projectile_2
+  - fire_Projectile_3
+  - fire_Projectile_1
+  - fire_Projectile_4
+  - i_are_spaceship_3
+  - i_are_spaceship_2
+  - i_are_spaceship_1
+  - i_are_spaceship_0
+  - i_are_spaceship_7
+  - i_are_spaceship_6
+  - i_are_spaceship_5
+  - i_are_spaceship_4
+  - i_are_spaceship_12
+  - i_are_spaceship_13
   - bat_Hit_R
   - bat_Hit_L
   - bat_Normal_R_1
