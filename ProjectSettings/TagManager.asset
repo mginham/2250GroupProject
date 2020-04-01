@@ -8,6 +8,7 @@ TagManager:
   - sign
   - enemy
   - projectile
+  - enemyProjectile
   layers:
   - Default
   - TransparentFX
