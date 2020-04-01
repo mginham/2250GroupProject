@@ -42,11 +42,8 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 0c09f43bfb62804458284c739fee968e, type: 3}
-    totalSpriteSurfaceArea: 970524
+    totalSpriteSurfaceArea: 986908
     bindAsDefault: 1
-    storedHash:
-      serializedVersion: 2
-      Hash: 2e5e0734ce4bebcdbd67a1d0bcaad838
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300028, guid: db8869328708f9841bd5a8d40392625b, type: 3}
@@ -143,6 +140,22 @@ SpriteAtlas:
   - {fileID: 21300002, guid: 9f606a92d16f989459038384a80826a0, type: 3}
   - {fileID: 21300004, guid: 9f606a92d16f989459038384a80826a0, type: 3}
   - {fileID: 21300006, guid: 9f606a92d16f989459038384a80826a0, type: 3}
+  - {fileID: 21300008, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300024, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300010, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300012, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300000, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300014, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300016, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300002, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300004, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300006, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300028, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300030, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300026, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300018, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300020, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300022, guid: e90e59262b796c44a98f825a10476261, type: 3}
   - {fileID: 21300000, guid: c67e19c7b75c1e14fb93f798d9edb416, type: 3}
   - {fileID: 21300016, guid: d6bfd8f762bb27a45bf300d99b232e1e, type: 3}
   - {fileID: 21300018, guid: d6bfd8f762bb27a45bf300d99b232e1e, type: 3}
@@ -1483,6 +1496,22 @@ SpriteAtlas:
   - modified gfx melee sprites_1
   - modified gfx melee sprites_2
   - modified gfx melee sprites_3
+  - bat_Hit_R
+  - bat_Hit_L
+  - bat_Normal_R_1
+  - bat_Normal_R_2
+  - bat_Hit_F
+  - bat_Normal_R_3
+  - bat_Hit_B
+  - bat_Normal_F_1
+  - bat_Normal_F_2
+  - bat_Normal_F_3
+  - bat_Normal_L_2
+  - bat_Normal_L_3
+  - bat_Normal_L_1
+  - bat_Normal_B_1
+  - bat_Normal_B_2
+  - bat_Normal_B_3
   - Inner
   - log_8
   - log_9
