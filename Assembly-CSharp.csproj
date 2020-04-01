@@ -71,6 +71,7 @@
     <Compile Include="Assets\__Scripts\Enemy.cs" />
     <Compile Include="Assets\__Scripts\ExperienceText.cs" />
     <Compile Include="Assets\__Scripts\ExperienceTextManager.cs" />
+    <Compile Include="Assets\__Scripts\HealthPickUpScript.cs" />
     <Compile Include="Assets\__Scripts\HeartManager.cs" />
     <Compile Include="Assets\__Scripts\Knockback.cs" />
     <Compile Include="Assets\__Scripts\Log.cs" />

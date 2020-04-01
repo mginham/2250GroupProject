@@ -5,12 +5,9 @@ using UnityEngine.UI;
 
 public class Stats : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
-
 
     [SerializeField]
-    private float LifeSpan;
+    private GameObject HealthPickup;
 
     [SerializeField]
     private Animator LvlUP;
@@ -122,7 +119,7 @@ public class Stats : MonoBehaviour
         {
             content.fillAmount = Mathf.MoveTowards(content.fillAmount, currentFill,Time.deltaTime*lerpSpeed);
         }
-        content.fillAmount = currentFill; //Not need anymore due to line above
+        content.fillAmount = currentFill; 
         if (Input.GetKeyDown(KeyCode.X))
         {
             
@@ -170,6 +167,14 @@ public class Stats : MonoBehaviour
         LvlUP.SetTrigger("LevelUp");
         LvlUP2.SetTrigger("LevelUp2");
 
+        Instantiate(HealthPickup);
+        Vector3 pos = player.transform.position;
+        pos.x = player.transform.position.x;
+        pos.y = player.transform.position.y - 2;
+        HealthPickup.transform.position = pos;
+        HealthPickup.SetActive(true);
+
+
         levelText.text = MyLevel.ToString();
         XP.MyMaxValue = 10 * MyLevel;
         XP.MyCurrentValue = XP.MyOverFlow;
@@ -193,7 +198,7 @@ public class Stats : MonoBehaviour
         return cooldown;
     }
 
-
+    
 
 
     /*public IEnumerator FadeOut()

@@ -12,6 +12,19 @@ public class HeartManager : MonoBehaviour
     public FloatValue heartContainers;
     public FloatValue playerCurrentHealth;
 
+    private static HeartManager instance;
+    public static HeartManager myInstance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<HeartManager>();
+            }
+            return instance;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,5 +60,15 @@ public class HeartManager : MonoBehaviour
                 hearts[i].sprite = halfFullHeart;
             }
         }
+    }
+    public void HealPlayer()
+    {
+        for (int i = 0; i < heartContainers.runtimeValue; i++)
+        {
+            hearts[i].sprite=fullHeart;
+
+        }
+        playerCurrentHealth.runtimeValue = 6f;
+        Debug.Log("Healed");
     }
 }
