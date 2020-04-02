@@ -43,11 +43,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 0c09f43bfb62804458284c739fee968e, type: 3}
-    totalSpriteSurfaceArea: 87551274
+    totalSpriteSurfaceArea: 91380915
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: 80c87861cd607953c0ac45e279ef3d13
+      Hash: 6eb72638c0d9c6499a32bd30da4455d2
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 57845e207a697433b92e3aba240a4b2a, type: 3}
@@ -180,6 +180,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3b8425a53226f43f6acd09d1ee175f3a, type: 3}
   - {fileID: 21300000, guid: 597896b5bd1ae45e8923818e25d67a09, type: 3}
   - {fileID: 21300000, guid: b3e38fb5b83a24c4b93049ebc52a07a6, type: 3}
+  - {fileID: 21300000, guid: 980794c52b06b4321881b7e660b96699, type: 3}
   - {fileID: 21300000, guid: 8bb304e5355774d13aeee31659ffb129, type: 3}
   - {fileID: 21300008, guid: e90e59262b796c44a98f825a10476261, type: 3}
   - {fileID: 21300024, guid: e90e59262b796c44a98f825a10476261, type: 3}
@@ -197,6 +198,8 @@ SpriteAtlas:
   - {fileID: 21300018, guid: e90e59262b796c44a98f825a10476261, type: 3}
   - {fileID: 21300020, guid: e90e59262b796c44a98f825a10476261, type: 3}
   - {fileID: 21300022, guid: e90e59262b796c44a98f825a10476261, type: 3}
+  - {fileID: 21300000, guid: 0d5597a64908c40d3837ecbd1fa88ba1, type: 3}
+  - {fileID: 21300000, guid: 04ca10b6ed683436eac060964aabcfef, type: 3}
   - {fileID: 21300000, guid: 45d89eb64f4af4d5c907c7c5ef5b9cee, type: 3}
   - {fileID: 21300000, guid: ee9497270f8e4451d905d17d90ccad9c, type: 3}
   - {fileID: 21300000, guid: 1cbab147f3d6a4298afd5dc425552309, type: 3}
@@ -650,6 +653,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b3f86d5a68a9942d0b3d07b1a08efca4, type: 3}
   - {fileID: 21300000, guid: f7937dea06d104f4c9250daee53b1812, type: 3}
   - {fileID: 21300000, guid: 50c2d23b681ee476cbc8237eabb85cae, type: 3}
+  - {fileID: 21300000, guid: 0d40045b705ca2842a4df147e986abb1, type: 3}
+  - {fileID: 21300000, guid: a7f7c06bc68d54b0195c74a358fb814e, type: 3}
   - {fileID: 21300000, guid: b626ce7babbd24f9fbf2ace7ec7efbf2, type: 3}
   - {fileID: 21300000, guid: f441ed9bb39c31e49bd7d14e46cfe9c5, type: 3}
   - {fileID: 21300000, guid: a9334dabab2b04a25af2fd2cee6d9bef, type: 3}
@@ -1877,6 +1882,7 @@ SpriteAtlas:
   - pixil-frame-0 (12)
   - fire1
   - wizard-idle-5
+  - CustBackground
   - Animation4
   - bat_Hit_R
   - bat_Hit_L
@@ -1894,6 +1900,8 @@ SpriteAtlas:
   - bat_Normal_B_1
   - bat_Normal_B_2
   - bat_Normal_B_3
+  - StartButton
+  - Background
   - fire10
   - fire8
   - fireball3
@@ -2347,6 +2355,8 @@ SpriteAtlas:
   - pixil-frame-0 (8)
   - wizard-idle-3
   - pixil-frame-0 (11)
+  - font
+  - Adventum Final
   - pixil-frame-0 (2)
   - NPC_test
   - angel6

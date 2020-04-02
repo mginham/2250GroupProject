@@ -6,16 +6,12 @@ using UnityEngine.Audio;
 
 public class Stats : MonoBehaviour
 {
-    [SerializeField]
-    public AudioSource scream;//TODO change later
+    /*[SerializeField]
+    public AudioSource scream;// change later*/
 
 
-    [SerializeField]
-    public AudioSource HAH;
-
-
-    [SerializeField]
-    private GameObject HealthPickup;
+    /*[SerializeField]
+    public AudioSource HAH;*/
 
     [SerializeField]
     private Animator LvlUP;
@@ -29,7 +25,6 @@ public class Stats : MonoBehaviour
 
 
 
-    Vector3 pos;
 
     private static Stats instance;
 
@@ -58,10 +53,6 @@ public class Stats : MonoBehaviour
 
     [SerializeField]
     private int level;
-
-    [SerializeField]
-    private float lerpSpeed;
-    
 
     [SerializeField]
     private Text statValue;
@@ -138,12 +129,16 @@ public class Stats : MonoBehaviour
             content.fillAmount = Mathf.MoveTowards(content.fillAmount, currentFill,Time.deltaTime*lerpSpeed);
         }*/
         content.fillAmount = currentFill; 
-        if (Input.GetKeyDown(KeyCode.X))
+
+
+
+        //THIS WAS USED FOR DEBUGGIN PURPOSES TO TEST OUT THE XP SYSTEM
+        /*if (Input.GetKeyDown(KeyCode.X))
         {
             
             GainXP(3);
 
-        }
+        }*/
        
         
 
@@ -184,13 +179,8 @@ public class Stats : MonoBehaviour
         MyLevel++;
         LvlUP.SetTrigger("LevelUp");
         LvlUP2.SetTrigger("LevelUp2");
-        //HealthPickup.SetActive(false);
+   
         HeartManager.myInstance.HealPlayer();
-        /*Instantiate(HealthPickup);
-        HealthPickup.transform.position = pos;
-        HealthPickup.SetActive(true);*/
-
-
 
         levelText.text = MyLevel.ToString();
         XP.MyMaxValue = 10 * MyLevel;

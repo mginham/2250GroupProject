@@ -6,15 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/__Scripts/_Scenes/Customization_Menu.unity
+    path: Assets/__Scenes/Customization_Menu.unity
     guid: bac897d5e08bd4f90944ec2ac5dba8af
   - enabled: 1
-    path: Assets/__Scripts/_Scenes/_Scene_0.unity
+    path: Assets/__Scenes/_Scene_0.unity
     guid: a765835ec1d84414d9462d764498a2a5
   - enabled: 1
-    path: Assets/__Scripts/_Scenes/HouseInterior.unity
+    path: Assets/__Scenes/HouseInterior.unity
     guid: 1afad73a923deb24a8fb2d677e6b7df4
-  - enabled: 1
+  - enabled: 0
     path: Assets/__Scripts/_Scenes/Second_Level.unity
     guid: d29dc34b862b54672b4472963b321a1d
+  - enabled: 1
+    path: Assets/__Scenes/MainMenu.unity
+    guid: bfb7973a6721b4df3836738f9447f420
+  - enabled: 1
+    path: Assets/__Scenes/WinScreen.unity
+    guid: c9cdbae528da244ee882edcc57c9b276
+  - enabled: 1
+    path: Assets/__Scenes/GameOver.unity
+    guid: bbb1c65846c944599aa88f98df0caec0
   m_configObjects: {}

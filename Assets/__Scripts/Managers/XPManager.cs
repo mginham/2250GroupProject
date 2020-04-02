@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using UnityEngine.SceneManagement;
 
 static class XPManager
 {
@@ -12,23 +12,23 @@ static class XPManager
         int Enemy2XP = 6;
         int BossXP = 40;
         int totalXP = 0;
-        //TODO figure out a way to sense the enemy without using tags as if I create a new tag it will disrupt other scripts DONE
-        //TODO also figure out way to add XP for level clearing (maybe the player just reaches a point or something) DONE
-        //TODO also make sure I tell group about what I changed
-        //TODO maybe make main menu if I have time (just like two buttons saying quit or start new game)
-        //TODO maybe make customization menu a little nicer looking SORTA DONE
+
+
+        //Based on what the Enemy name is, is how much XP the player gets
         if (e.enemyName==("Larry the Log"))
         {
             totalXP += Enemy1XP;
             return totalXP;
         }
-        else if(e.enemyName==("Dracula"))//this is just a placeholder for when enemy2 is actually creaated
+        else if(e.enemyName==("Dracula"))
         {
             totalXP += Enemy2XP;
         }
         else if (e.enemyName == ("Wizard"))
         {
             totalXP += BossXP;
+            SceneManager.LoadScene("WinScreen");
+
         }
         return totalXP;
 

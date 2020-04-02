@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         // If there is motion in the keys, move the character, else remain idle
         if (Input.GetButtonDown("swordAttack") && currentState != PlayerState.swordAttack && currentState != PlayerState.stagger) // Activate swordAttacking animation if not already in that state
         {
-            Stats.myInstance.HAH.Play();
+            
             StartCoroutine(AttackCo());
         }
         else if (Input.GetButtonDown("arrowAttack") && currentState != PlayerState.swordAttack && currentState != PlayerState.stagger)

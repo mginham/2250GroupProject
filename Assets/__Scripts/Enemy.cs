@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // States of the Enemy
 public enum EnemyState
@@ -42,8 +43,8 @@ public class Enemy : MonoBehaviour
         {
             this.gameObject.SetActive(false);
 
-            Stats.myInstance.GainXP(XPManager.CalculateXP(this as Enemy));//ZACH ADDED THIS
-            
+            Stats.myInstance.GainXP(XPManager.CalculateXP(this as Enemy));//Calls the instance in stats so that it can access the gainxp function whilstcalling the XPManager
+          
         }
     }
 

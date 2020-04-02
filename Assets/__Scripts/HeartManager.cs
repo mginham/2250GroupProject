@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HeartManager : MonoBehaviour
 {
@@ -44,6 +45,10 @@ public class HeartManager : MonoBehaviour
     {
         float tempHealth = playerCurrentHealth.runtimeValue / 2; // Half heart = 1 health point
 
+        if (playerCurrentHealth.runtimeValue == 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
         for(int i = 0; i < heartContainers.runtimeValue; i++)
         {
             // Compare playerCurrentHealth to values in heartContainers

@@ -78,10 +78,12 @@
     <Compile Include="Assets\__Scripts\HeartManager.cs" />
     <Compile Include="Assets\__Scripts\Knockback.cs" />
     <Compile Include="Assets\__Scripts\Log.cs" />
+    <Compile Include="Assets\__Scripts\MainMenu.cs" />
     <Compile Include="Assets\__Scripts\Managers\XPManager.cs" />
     <Compile Include="Assets\__Scripts\PlayerHit.cs" />
     <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\__Scripts\Pot.cs" />
+    <Compile Include="Assets\__Scripts\Quit.cs" />
     <Compile Include="Assets\__Scripts\RoomMove.cs" />
     <Compile Include="Assets\__Scripts\SceneTransition.cs" />
     <Compile Include="Assets\__Scripts\ScriptableObjects\FloatValue.cs" />
@@ -94,12 +96,6 @@
     <Compile Include="Assets\__Scripts\Stats.cs" />
     <Compile Include="Assets\__Scripts\Switcher.cs" />
     <Compile Include="Assets\__Scripts\WizardBoss.cs" />
-    <Compile Include="Assets\__Scripts\zzzUselessDeleteLater\Exp.cs" />
-    <Compile Include="Assets\__Scripts\zzzUselessDeleteLater\ExpBar.cs" />
-    <Compile Include="Assets\__Scripts\zzzUselessDeleteLater\LevelSystem.cs" />
-    <Compile Include="Assets\__Scripts\zzzUselessDeleteLater\LevelWindow.cs" />
-    <Compile Include="Assets\__Scripts\zzzUselessDeleteLater\PlayerLevelSystem.cs" />
-    <Compile Include="Assets\__Scripts\zzzUselessDeleteLater\TestLevel.cs" />
     <Compile Include="Assets\Pls.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/zachraposo/Documents/GitHub/SE2250-GroupProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
