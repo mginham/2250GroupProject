@@ -2641,7 +2641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: _Scene_0
-  playerPosition: {x: 0, y: 0}
+  playerPosition: {x: 12.5, y: 6.5}
   playerStorage: {fileID: 11400000, guid: 89161eac5ed528f45ac6b286f9ddd07f, type: 2}
 --- !u!1 &1850581220
 GameObject:
@@ -4550,5 +4550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5734186324110840062, guid: 862d2a837a129d2479d799a5839393e1,
+        type: 3}
+      propertyPath: startPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: 89161eac5ed528f45ac6b286f9ddd07f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 862d2a837a129d2479d799a5839393e1, type: 3}

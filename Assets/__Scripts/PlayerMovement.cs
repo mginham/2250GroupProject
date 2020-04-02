@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public Signal playerHealthSignal;
     public GameObject arrowProjectile;
     public float teleportDistance;
+    public VectorValue startPosition;
 
 
     // Start is called before the first frame update
@@ -35,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
         // Set initial values to be downward facing, so that idle attacks without initial movement will activate down attack instead of activating all attacks
         _animator.SetFloat("moveX", 0);
         _animator.SetFloat("moveY", -1);
+
+        transform.position = startPosition.initialValue;
     }
 
     // Update is called once per frame
