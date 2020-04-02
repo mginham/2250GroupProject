@@ -2149,7 +2149,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: _Scene_0
+          m_StringArgument: HouseInterior
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1100681037
@@ -2962,6 +2962,7 @@ MonoBehaviour:
   player1: {fileID: 41226378}
   classItems2: []
   frame: {fileID: 0}
+  wait: 1
 --- !u!4 &1861616331
 Transform:
   m_ObjectHideFlags: 0

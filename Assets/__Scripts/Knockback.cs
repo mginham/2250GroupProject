@@ -34,7 +34,7 @@ public class Knockback : MonoBehaviour
                 }
 
                 // If object is enemy, activate stagger state
-                if (other.gameObject.CompareTag("enemy") && other.isTrigger)
+                if (other.gameObject.CompareTag("enemy") && !this.gameObject.CompareTag("enemyProjectile"))
                 {
                     hittable.GetComponent<Enemy>().currentState = EnemyState.stagger;
                     other.GetComponent<Enemy>().Knock(hittable, knockTime, damage);

@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour
             this.gameObject.SetActive(false);
 
             Stats.myInstance.GainXP(XPManager.CalculateXP(this as Enemy));//ZACH ADDED THIS
-            Stats.myInstance.scream.Play();
+            
         }
     }
 

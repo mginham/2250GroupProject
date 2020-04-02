@@ -12,11 +12,19 @@ public class Arrow : MonoBehaviour
     {
         
     }
+    void Update()
+    {
+        if (gameObject.transform.position.y == -40 || gameObject.transform.position.y == 40 || gameObject.transform.position.x == -40 || gameObject.transform.position.x == 40)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public void Setup(Vector2 velocityOfArrow, Vector3 directionOfArrow)
     {
         arrowRigidBody.velocity = velocityOfArrow.normalized * speed;
         transform.rotation = Quaternion.Euler(directionOfArrow);
+       
     }
 
 }

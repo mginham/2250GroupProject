@@ -23,7 +23,7 @@ public class Stats : MonoBehaviour
     [SerializeField]
     private Animator LvlUP2;
 
-    private Image content;
+    private static Image content;//static
 
     public static float Cool;
 
@@ -51,7 +51,7 @@ public class Stats : MonoBehaviour
     [SerializeField]
     public GameObject LvlUpPrefab;
 
-    private float OverFlow;
+    private static float OverFlow;//static
 
     [SerializeField]
     private Text levelText;
@@ -69,11 +69,11 @@ public class Stats : MonoBehaviour
     [SerializeField]
     private Stats XP;
 
-    private float currentFill;
+    private static float currentFill;//static
 
     public float MyMaxValue { get; set; }
 
-    private float currentValue;
+    private static float currentValue;//static
 
     private bool isFull
     {
@@ -119,26 +119,33 @@ public class Stats : MonoBehaviour
 
     public int MyLevel { get => level; set => level = value; }
 
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     void Start()
     {
-        XP.Initialize(0, 10*MyLevel);
+        XP.Initialize(currentValue, 10*MyLevel);
         content = GetComponent<Image>();
         levelText.text = MyLevel.ToString();
     }
     void Update()
     {
-        if (currentFill != content.fillAmount)
+        /*if (currentFill != content.fillAmount)
         {
             content.fillAmount = Mathf.MoveTowards(content.fillAmount, currentFill,Time.deltaTime*lerpSpeed);
-        }
+        }*/
         content.fillAmount = currentFill; 
         if (Input.GetKeyDown(KeyCode.X))
         {
             
             GainXP(3);
-            //scream.Play();
+
         }
-        //Vector3 pos = player.transform.position;
+       
+        
 
     }
 
@@ -152,7 +159,6 @@ public class Stats : MonoBehaviour
     {
 
         XP.MyCurrentValue += xpStat;
-        //TODO add in display thingy guy has in video
         if (XP.MyCurrentValue >= XP.MyMaxValue)
         {
             StartCoroutine(Ding());
@@ -168,8 +174,6 @@ public class Stats : MonoBehaviour
             
         }
         
-        //ExperienceTextManager.myInstance.CreateText(player.transform.position, xpStat.ToString(), SCCTYPE.XP);//THIS MAY BE SCREWING STUFF UP EITHER FIX IT OR GET RID OF IT
-
     }
     private IEnumerator Ding()
     {

@@ -9,7 +9,8 @@ static class XPManager
     public static int CalculateXP(Enemy e)
     {
         int Enemy1XP = 4;
-        int Enemy2XP = 8;
+        int Enemy2XP = 6;
+        int BossXP = 40;
         int totalXP = 0;
         //TODO figure out a way to sense the enemy without using tags as if I create a new tag it will disrupt other scripts DONE
         //TODO also figure out way to add XP for level clearing (maybe the player just reaches a point or something) DONE
@@ -21,11 +22,16 @@ static class XPManager
             totalXP += Enemy1XP;
             return totalXP;
         }
-        else if(e.enemyName==("enemy2Name"))//this is just a placeholder for when enemy2 is actually creaated
+        else if(e.enemyName==("Dracula"))//this is just a placeholder for when enemy2 is actually creaated
         {
             totalXP += Enemy2XP;
         }
+        else if (e.enemyName == ("Wizard"))
+        {
+            totalXP += BossXP;
+        }
         return totalXP;
+
 
     }
 
