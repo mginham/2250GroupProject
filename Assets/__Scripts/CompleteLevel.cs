@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CompleteLevel : MonoBehaviour
 {
@@ -24,6 +26,10 @@ public class CompleteLevel : MonoBehaviour
             Stats.myInstance.GainXP(XPManager.CalculateXP(this as CompleteLevel));//ZACH ADDED THIS
             Completed = true;
             Debug.Log("LEVEL COMPLETED!");
+            SceneManager.LoadScene("Second_Level");
+
+
         }
     }
+   
 }

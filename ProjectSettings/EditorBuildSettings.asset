@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/__Scripts/_Scenes/_Scene_0.unity
     guid: a765835ec1d84414d9462d764498a2a5
+  - enabled: 1
+    path: Assets/__Scripts/_Scenes/HouseInterior.unity
+    guid: 1afad73a923deb24a8fb2d677e6b7df4
+  - enabled: 1
+    path: Assets/__Scripts/_Scenes/Second_Level.unity
+    guid: d29dc34b862b54672b4472963b321a1d
   m_configObjects: {}

@@ -81,8 +81,10 @@
     <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\__Scripts\Pot.cs" />
     <Compile Include="Assets\__Scripts\RoomMove.cs" />
+    <Compile Include="Assets\__Scripts\SceneTransition.cs" />
     <Compile Include="Assets\__Scripts\ScriptableObjects\FloatValue.cs" />
     <Compile Include="Assets\__Scripts\ScriptableObjects\Signal.cs" />
+    <Compile Include="Assets\__Scripts\ScriptableObjects\VectorValue.cs" />
     <Compile Include="Assets\__Scripts\Sign.cs" />
     <Compile Include="Assets\__Scripts\SignalListener.cs" />
     <Compile Include="Assets\__Scripts\SingletonGeneric.cs" />
